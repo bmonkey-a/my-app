@@ -13,3 +13,8 @@
     </span>
   </div>
 </div>
+<input type="text" [(ngModel)]="name"><br>
+<input type="number" [(ngModel)]="age"><br>
+<child-comp [userName]="name" [userAge]="age" #counter>
+</child-comp>
+<button (click)="counter.increment()">+</button><button (click)="counter.decrement()">-</button><br>

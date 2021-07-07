@@ -4,6 +4,8 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
+import {ChildComponent} from "./child-comp.component";
+import {BoldDirective} from "./bold.directive";
 
 @NgModule({
   schemas: [
@@ -11,7 +13,9 @@ import { HelloComponent } from './hello.component';
   ],
   declarations: [
     AppComponent,
-    HelloComponent
+    HelloComponent,
+    ChildComponent,
+    BoldDirective
   ],
   imports: [
     BrowserModule, FormsModule
